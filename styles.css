@@ -1,0 +1,12 @@
+body {
+  background-image: url("landscape.jpg");
+}
+h1 {
+  color: white;
+}
+h1,
+h2,
+h3,
+p {
+  font-family: "Lexend Peta", sans-serif;
+}
