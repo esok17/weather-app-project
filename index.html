@@ -25,8 +25,7 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    <div class="container">
-      <h1>Weather Forecast</h1>
+    <div class="container" id="containter">
       <form id="search-form">
         <input
           type="search"
@@ -40,62 +39,24 @@
       </form>
       <div class="card">
         <div class="card-body">
-          <h2 id="new-city">Atlanta</h2>
+          <h1 id="new-city">Atlanta</h1>
           <p class="date" id="the-date"></p>
-          <h3 id="temperature"></h3>
-          <img src="" alt="" id="icon" />
-          <div class="pointers">
-            <ul>
-              <li id="description"></li>
-              <li>Humidity: <span id="humidity"></span>%</li>
-              <li>Wind: <span id="wind"></span> km/h</li>
-            </ul>
+          <div class="row">
+            <div class="col-9">
+              <img src="" alt="" id="icon" />
+              <strong><span id="temperature"></span></strong>
+              <div class="pointers">
+                <ul>
+                  <li id="description"></li>
+                  <li>Humidity: <span id="humidity"></span>%</li>
+                  <li>Wind: <span id="wind"></span> km/h</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card-group">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Sat</h5>
-            <i class="fa-solid fa-sun"></i>
-            <p class="card-text">74°/ 42°</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Sun</h5>
-            <i class="fa-solid fa-cloud-sun"></i>
-            <p class="card-text">68°/ 35°</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Mon</h5>
-            <i class="fa-solid fa-cloud-rain"></i>
-            <p class="card-text">65°/ 45°</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Tue</h5>
-            <i class="fa-solid fa-cloud-sun-rain"></i>
-            <p class="card-text">70°/ 58°</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Wed</h5>
-            <i class="fa-solid fa-sun"></i>
-            <p class="card-text">57°/ 32°</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Thur</h5>
-            <i class="fa-solid fa-sun"></i>
-            <p class="card-text">72°/ 50°</p>
-          </div>
-        </div>
+        <h2>Forecast</h2>
+        <div class="weather-forecast" id="forecast"></div>
       </div>
       <small>
         <a

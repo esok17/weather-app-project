@@ -1,14 +1,18 @@
 body {
   background-image: url("landscape.jpg");
 }
-h1 {
-  color: white;
+h1,
+h2 {
+  color: black;
 }
 h1,
 h2,
 h3,
 p {
   font-family: "Lexend Peta", sans-serif;
+}
+h2 {
+  font-size: 24px;
 }
 ul {
   margin: 0;
@@ -19,7 +23,14 @@ li {
   font-size: 12.5px;
   padding: 0;
   margin: 0;
+  color: gray;
 }
 li:first-letter {
   text-transform: capitalize;
+}
+#temperature {
+  font-size: 36px;
+}
+#search-form {
+  margin-top: 40px;
 }
