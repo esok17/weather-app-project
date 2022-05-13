@@ -107,7 +107,7 @@ function displayForecast(response) {
         <span class="weather-forecast-temperature-max">${Math.round(
           forecastDay.temp.max
         )}° |</span>
-        <span class="weather-forecast-temperaturemin">${Math.round(
+        <span class="weather-forecast-temperature-min">${Math.round(
           forecastDay.temp.min
         )}°</span>
         </div>
@@ -126,3 +126,5 @@ function getForecast(coordinates) {
 }
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
+
+searchCity("Atlanta");

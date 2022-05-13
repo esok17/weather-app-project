@@ -34,3 +34,6 @@ li:first-letter {
 #search-form {
   margin-top: 40px;
 }
+.weather-forecast-temperature-min {
+  color: grey;
+}
