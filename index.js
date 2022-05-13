@@ -40,6 +40,12 @@ let currentMonth = months[now.getMonth()];
 let currentDate = now.getDate();
 let currentHours = now.getHours();
 let currentMinutes = now.getMinutes();
+if (currentHours < 10) {
+  currentHours = `0${currentHours}`;
+}
+if (currentMinutes < 10) {
+  currentMinutes = `0${currentMinutes}`;
+}
 let theDate = document.querySelector("#the-date");
 theDate.innerHTML = `${currentDay} ${currentMonth} ${currentDate} ${currentHours}:${currentMinutes}`;
 

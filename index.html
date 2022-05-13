@@ -11,93 +11,93 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <script src="https://kit.fontawesome.com/c5b8758750.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@300&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c5b8758750.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
-        <h1>Weather Forecast</h1>
-        <form id="search-form">
-          <input
-            type="search"
-            placeholder="Type a city..."
-            autofocus="on"
-            id="search-input"
-            style="width: 25rem;"
-          />
-          <input type="submit" value="search"/>
-          <input id="current-location-button" type="button" value="📍"/>
-        </form> 
-    </br>
-     <div class="card">
-  <div class="card-body">
-  <h2 id="new-city"> </h2>
-    <h3 id="temperature"></h3><img src="" alt="" id="icon" />
-    <p class="date" id="the-date"></p>
-     <div class="pointers">
-    <ul>
-      <li id="description">
-      </li>
-      <li>
-        Humidity: <span id="humidity"></span>%
-      </li>
-      <li>
-        Wind: <span id="wind"></span> km/h
-      </li>
-    </ul>
-  </div>
-</div>
-</div>
-<div class="card-group">
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Sat</h5>
-      <i class="fa-solid fa-sun"></i>
-      <p class="card-text">74°/ 42°</p>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Sun</h5>
-      <i class="fa-solid fa-cloud-sun"></i>
-      <p class="card-text">68°/ 35°</p>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Mon</h5>
-      <i class="fa-solid fa-cloud-rain"></i>
-      <p class="card-text">65°/ 45°</p>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Tues</h5>
-      <i class="fa-solid fa-cloud-sun-rain"></i>
-      <p class="card-text">70°/ 58°</p>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Wed</h5>
-      <i class="fa-solid fa-sun"></i>
-      <p class="card-text">57°/ 32°</p>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Thurs</h5>
-      <i class="fa-solid fa-sun"></i>
-      <p class="card-text">72°/ 50°</p>
-    </div>
-  </div>
-</div>
-</div>
- <small>
+      <h1>Weather Forecast</h1>
+      <form id="search-form">
+        <input
+          type="search"
+          placeholder="Type a city..."
+          autofocus="on"
+          id="search-input"
+          style="width: 25rem"
+        />
+        <input type="submit" value="search" />
+        <input id="current-location-button" type="button" value="📍" />
+      </form>
+      <div class="card">
+        <div class="card-body">
+          <h2 id="new-city">Atlanta</h2>
+          <p class="date" id="the-date"></p>
+          <h3 id="temperature"></h3>
+          <img src="" alt="" id="icon" />
+          <div class="pointers">
+            <ul>
+              <li id="description"></li>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span> km/h</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card-group">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Sat</h5>
+            <i class="fa-solid fa-sun"></i>
+            <p class="card-text">74°/ 42°</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Sun</h5>
+            <i class="fa-solid fa-cloud-sun"></i>
+            <p class="card-text">68°/ 35°</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Mon</h5>
+            <i class="fa-solid fa-cloud-rain"></i>
+            <p class="card-text">65°/ 45°</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Tue</h5>
+            <i class="fa-solid fa-cloud-sun-rain"></i>
+            <p class="card-text">70°/ 58°</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Wed</h5>
+            <i class="fa-solid fa-sun"></i>
+            <p class="card-text">57°/ 32°</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Thur</h5>
+            <i class="fa-solid fa-sun"></i>
+            <p class="card-text">72°/ 50°</p>
+          </div>
+        </div>
+      </div>
+      <small>
         <a
           href="https://github.com/esok17/weather-app-project"
           id="code-source"
@@ -106,6 +106,7 @@
         >
         by Eunice
       </small>
-<script src="index.js"></script>
+    </div>
+    <script src="index.js"></script>
   </body>
 </html>
