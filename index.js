@@ -3,6 +3,9 @@ function searchCity(event) {
   let city = document.querySelector("#new-city");
   let searchInput = document.querySelector("#search-input");
   city.innerHTML = searchInput.value;
+  search(searchInput.value);
+}
+function search(city) {
   let apiKey = "b22c6e861b6229a986e4472f43065be9";
   let units = "imperial";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${searchInput.value}&appid=${apiKey}&units=${units}`;
@@ -127,4 +130,4 @@ function getForecast(coordinates) {
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
-searchCity("Atlanta");
+search("Atlanta");
