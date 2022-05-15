@@ -8,7 +8,7 @@ function searchCity(event) {
 function search(city) {
   let apiKey = "b22c6e861b6229a986e4472f43065be9";
   let units = "imperial";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${searchInput.value}&appid=${apiKey}&units=${units}`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
   axios.get(apiUrl).then(showTemperature);
 }
 let form = document.querySelector("#search-form");
